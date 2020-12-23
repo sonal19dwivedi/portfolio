@@ -1,32 +1,32 @@
 .root {
-    flex-grow: 1;
-    animation: moveDown 0.5s ease-in-out;
+  flex-grow: 1;
+  animation: moveDown 0.5s ease-in-out;
 }
 
 .menuButton {
-    margin-right: 2px;
+  margin-right: 2px;
 }
 
-.toolbar{
-    background-color: #619196;
+.toolbar {
+  background-color: #619196;
 }
 
-.logo{
-    width: 5%;
-    flex-grow: 0;
+.logo {
+  width: 5%;
+  flex-grow: 0;
 }
 
 .title {
-    display: flex;
-    flex-grow: 1;
-    text-align: center;
+  display: flex;
+  flex-grow: 1;
+  text-align: center;
 }
 
 @keyframes moveDown {
-    from {
-      transform: translateY(-5rem);
-    }
-    to {
-      transform: translateY(0rem);
-    }
+  from {
+    transform: translateY(-5rem);
   }
+  to {
+    transform: translateY(0rem);
+  }
+}

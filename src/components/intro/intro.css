@@ -1,0 +1,39 @@
+body {
+  background-color: #f9e1e0;
+}
+
+.intro {
+  height: 90vh;
+  object-fit: cover;
+}
+
+.heading {
+  position: absolute;
+  width: 100%;
+  top: 17rem;
+  z-index: 1;
+  margin-top: -125px;
+  text-align: center;
+}
+
+.strong {
+  font-family: "Brush Script MT", "Courier New", monospace;
+  font-size: 1.25em;
+}
+
+.introduction div {
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 100;
+  letter-spacing: 7px;
+}
+.main {
+  font-size: 50px;
+}
+.sub1 {
+  font-size: 27px;
+  letter-spacing: 2px;
+}
+.sub2 {
+  font-size: 27px;
+  letter-spacing: 2px;
+}
