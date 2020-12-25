@@ -28,4 +28,4 @@ const IntroTypeContent = () => (
   </div>
 );
 
-export default Intro;
+export default IntroTypeContent;
