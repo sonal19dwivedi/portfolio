@@ -1,0 +1,19 @@
+.techSkills h1 {
+  font-family: "Brush Script MT", "Courier New", monospace;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.techSkills .card {
+  z-index: 11;
+}
+
+.techSkills .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+}
+
+.techSkills .avatar {
+  display: flex;
+}

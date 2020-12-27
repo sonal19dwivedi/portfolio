@@ -22,6 +22,13 @@
   text-align: center;
 }
 
+.sticky-footer {
+  width: 100%;
+  position: absolute; /* for it to disappear under last body element */
+  bottom: 0; /* so the footer can stick to the bottom*/
+  z-index: 10;
+}
+
 @keyframes moveDown {
   from {
     transform: translateY(-5rem);

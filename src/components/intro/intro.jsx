@@ -2,7 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import "./intro.css";
 
-const IntroTypeContent = () => (
+const Intro = () => (
   <div className="introduction">
     <div className="heading">
       <div className="main text-center mb-3">
@@ -28,4 +28,4 @@ const IntroTypeContent = () => (
   </div>
 );
 
-export default IntroTypeContent;
+export default Intro;

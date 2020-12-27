@@ -6,8 +6,11 @@ import IconButton from "@material-ui/core/IconButton";
 import "./navBar.css";
 import logo from "../../assets/images/logo.jpg";
 import AboutMe from "../about/aboutMe";
-import MainIntro from "../intro/mainIntro";
+import Intro from "../intro/intro";
 import Home from "@material-ui/icons/Home";
+import BottomNav from "./bottomNav";
+import TechSkills from "../tech-skills/techSkills";
+import WorkExTimeline from "../work-ex/workEx";
 
 export default function NavBar() {
   const [selectedTab, setSelectedTab] = React.useState(0);
@@ -21,7 +24,7 @@ export default function NavBar() {
       <AppBar position="static">
         <Toolbar className="toolbar">
           <IconButton edge="start" className="menuButton" color="inherit" aria-label="menu"></IconButton>
-          <img className="logo" src={logo} />
+          <img className="logo" src={logo} alt="SD" />
           <Typography variant="h6" className="title">
             Sonal Dwivedi
           </Typography>
@@ -32,12 +35,14 @@ export default function NavBar() {
             <Tab label="Work Experience" />
             <Tab label="Projects" />
             <Tab label="Achievements" />
-            <Tab label="Contact" />
           </Tabs>
         </Toolbar>
       </AppBar>
-      {selectedTab === 0 && <MainIntro />}
+      {selectedTab === 0 && <Intro />}
       {selectedTab === 1 && <AboutMe />}
+      {selectedTab === 2 && <TechSkills />}
+      {selectedTab === 3 && <WorkExTimeline />}
+      <BottomNav />
     </div>
   );
 }
