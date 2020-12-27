@@ -7,19 +7,19 @@ import TimelineConnector from "@material-ui/lab/TimelineConnector";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
 import TimelineDot from "@material-ui/lab/TimelineDot";
-import FastfoodIcon from "@material-ui/icons/Fastfood";
-import LaptopMacIcon from "@material-ui/icons/LaptopMac";
-import HotelIcon from "@material-ui/icons/Hotel";
-import RepeatIcon from "@material-ui/icons/Repeat";
+import Work from "@material-ui/icons/Work";
 import Paper from "@material-ui/core/Paper";
+import School from "@material-ui/icons/School";
 import Typography from "@material-ui/core/Typography";
+import { MY_WORK_EX } from "./workExContent";
+import "./workEx.css";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
     padding: "6px 16px",
   },
-  secondaryTail: {
-    backgroundColor: theme.palette.secondary.main,
+  color: {
+    backgroundColor: "#005f69",
   },
 }));
 
@@ -27,79 +27,40 @@ export default function WorkExTimeline() {
   const classes = useStyles();
 
   return (
-    <Timeline align="alternate">
-      <TimelineItem>
-        <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
-            9:30 am
-          </Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot>
-            <FastfoodIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              Eat
+    <Timeline align="alternate" className="workExTimeline">
+      {MY_WORK_EX.map((ex, index) => (
+        <TimelineItem key={index}>
+          <TimelineOppositeContent>
+            <Typography variant="body2" color="textSecondary">
+              {ex.timeline}
             </Typography>
-            <Typography>Because you need strength</Typography>
-          </Paper>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
-            10:00 am
-          </Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot color="primary">
-            <LaptopMacIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              Code
-            </Typography>
-            <Typography>Because it&apos;s awesome!</Typography>
-          </Paper>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot color="primary" variant="outlined">
-            <HotelIcon />
-          </TimelineDot>
-          <TimelineConnector className={classes.secondaryTail} />
-        </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              Sleep
-            </Typography>
-            <Typography>Because you need rest</Typography>
-          </Paper>
-        </TimelineContent>
-      </TimelineItem>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot className={classes.color}>
+              <Work />
+            </TimelineDot>
+            <TimelineConnector className={classes.color} />
+          </TimelineSeparator>
+          <TimelineContent className="timelineContent">
+            <Paper elevation={3} className={classes.paper}>
+              <Typography variant="h6" component="h1">
+                {ex.title}
+              </Typography>
+              <Typography variant="body2" color="textSecondary">
+                {ex.company}
+              </Typography>
+              <Typography align="left">{ex.details}</Typography>
+            </Paper>
+          </TimelineContent>
+        </TimelineItem>
+      ))}
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot color="secondary">
-            <RepeatIcon />
+            <School />
           </TimelineDot>
         </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              Repeat
-            </Typography>
-            <Typography>Because this is the life you love!</Typography>
-          </Paper>
-        </TimelineContent>
+        <TimelineContent></TimelineContent>
       </TimelineItem>
     </Timeline>
   );

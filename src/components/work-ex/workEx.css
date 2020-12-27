@@ -1,0 +1,7 @@
+.timelineContent {
+  z-index: 11;
+}
+
+.workExTimeline .timelineContent:hover {
+  transform: scale(1.05);
+}
