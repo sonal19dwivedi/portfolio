@@ -12,6 +12,7 @@ import BottomNav from "./bottomNav";
 import TechSkills from "../tech-skills/techSkills";
 import WorkExTimeline from "../work-ex/workEx";
 import Awards from "../awards/awards";
+import Projects from "../projects/projects";
 
 export default function NavBar() {
   const [selectedTab, setSelectedTab] = React.useState(0);
@@ -43,6 +44,7 @@ export default function NavBar() {
       {selectedTab === 1 && <AboutMe />}
       {selectedTab === 2 && <TechSkills />}
       {selectedTab === 3 && <WorkExTimeline />}
+      {selectedTab === 4 && <Projects />}
       {selectedTab === 5 && <Awards />}
       <BottomNav />
     </div>
