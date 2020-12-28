@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Avatar from "@material-ui/core/Avatar";
-import HeadShot from "../../assets/images/headShot.jpg";
+import HeadShot from "../../assets/images/about/headShot.jpg";
 import { ABOUT_CONTENT, PAGE_TITLE } from "./aboutContent";
 import "./aboutMe.css";
 

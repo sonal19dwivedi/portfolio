@@ -31,7 +31,7 @@ export default function TechSkills() {
         </Grid>
       </Grid>
 
-      <Grid container spacing={0.5} justify="space-evenly" alignText="center" alignItems="center">
+      <Grid container spacing={0.5} justify="space-evenly" alignItems="center">
         {SkillsContent.map((tech, k) => (
           <Grid item sm={4}>
             <Card className="card">
@@ -43,7 +43,7 @@ export default function TechSkills() {
                 </Typography>
                 <br />
                 {tech.content.map((c, k) => (
-                  <Typography variant="body2" component="p" key={k} className={classes.wrapIcon}>
+                  <Typography variant="body2" key={k} className={classes.wrapIcon}>
                     <center>
                       <Avatar alt={c.imgAltText} src={c.imgSrc} className="avatar" />
                       {c.name}

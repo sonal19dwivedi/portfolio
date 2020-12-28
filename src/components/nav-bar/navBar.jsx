@@ -11,6 +11,7 @@ import Home from "@material-ui/icons/Home";
 import BottomNav from "./bottomNav";
 import TechSkills from "../tech-skills/techSkills";
 import WorkExTimeline from "../work-ex/workEx";
+import Awards from "../awards/awards";
 
 export default function NavBar() {
   const [selectedTab, setSelectedTab] = React.useState(0);
@@ -34,7 +35,7 @@ export default function NavBar() {
             <Tab label="Technical Skills" />
             <Tab label="Work Experience" />
             <Tab label="Projects" />
-            <Tab label="Achievements" />
+            <Tab label="Honors & Awards" />
           </Tabs>
         </Toolbar>
       </AppBar>
@@ -42,6 +43,7 @@ export default function NavBar() {
       {selectedTab === 1 && <AboutMe />}
       {selectedTab === 2 && <TechSkills />}
       {selectedTab === 3 && <WorkExTimeline />}
+      {selectedTab === 5 && <Awards />}
       <BottomNav />
     </div>
   );
