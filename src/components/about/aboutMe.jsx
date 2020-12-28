@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
   large: {
     width: theme.spacing(48),
     height: theme.spacing(48),
-    zIndex: 11,
   },
   button: {
     margin: theme.spacing(1),

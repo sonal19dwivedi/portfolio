@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import GitHub from "@material-ui/icons/GitHub";
-import Home from "@material-ui/icons/Home";
 import LinkedIn from "@material-ui/icons/LinkedIn";
 import Email from "@material-ui/icons/Email";
 import Snackbar from "@material-ui/core/Snackbar";
@@ -47,10 +46,11 @@ export default function BottomNav() {
   return (
     <div className="footer sticky-footer">
       <BottomNavigation value={value} onChange={handleChange} className={classes.bottomNav}>
-        <BottomNavigationAction label="Home" value="home" icon={<Home />} />
-        <BottomNavigationAction label="LinkedIn" value="LinkedIn" icon={<LinkedIn />} onClick={handleClick(openLinkedIn)} />
+        <BottomNavigationAction label="LinkedIn" value="LinkedIn" icon={<LinkedIn />} onClick={handleClick(openLinkedIn)}>
+          {console.log("clicked")}
+        </BottomNavigationAction>
         <BottomNavigationAction label="E-mail" value="E-mail" icon={<Email />} onClick={handleClick(popUpEmail)} />
-        <BottomNavigationAction label="GitHub" value="GitHub" icon={<GitHub />} />
+        <BottomNavigationAction label="GitHub" value="GitHub" icon={<GitHub />} onClick={handleClick(openGitHub)} />
         <Snackbar open={open} onClose={handleClose} TransitionComponent={transition} message={EMAIL} key={transition ? transition.name : ""} />
       </BottomNavigation>
     </div>
@@ -62,5 +62,9 @@ function popUpEmail(props) {
 }
 
 function openLinkedIn() {
-  return window.open("https://www.linkedin.com/in/sonal-dwivedi/", "_blank");
+  return window.open("https://www.linkedin.com/in/sonal-dwivedi/", "_blank", "noopener noreferrer");
+}
+
+function openGitHub() {
+  return window.open("https://github.com/sonal19dwivedi", "_blank", "noopener noreferrer");
 }

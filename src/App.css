@@ -2,6 +2,10 @@
   background-color: #ffffff;
 }
 
+.app .loading {
+  text-align: center;
+}
+
 .particles-box {
   margin-top: 3rem;
   position: absolute;

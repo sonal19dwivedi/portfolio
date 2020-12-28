@@ -3,12 +3,9 @@
   animation: moveDown 0.5s ease-in-out;
 }
 
-.menuButton {
-  margin-right: 2px;
-}
-
 .toolbar {
   background-color: #005f69;
+  border: none;
 }
 
 .logo {
