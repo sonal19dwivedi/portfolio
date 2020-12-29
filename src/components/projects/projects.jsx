@@ -23,7 +23,7 @@ export default function Projects() {
       </div>
       <Grid container spacing={1} justify="center">
         {MY_PROJECTS.map((project, index) => (
-          <Grid item sm={4}>
+          <Grid item xs={10}>
             <div>
               <Paper elevation={3} align="center">
                 <Typography variant="h6" component="h1" align="center" key={index}>
