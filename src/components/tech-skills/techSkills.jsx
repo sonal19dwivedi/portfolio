@@ -31,26 +31,26 @@ export default function TechSkills() {
         </Grid>
       </Grid>
 
-      <Grid container spacing={0.5} justify="space-evenly" alignItems="center">
+      <Grid container spacing={1} justify="space-evenly" alignItems="center">
         {SkillsContent.map((tech, k) => (
-          <Grid item sm={4}>
+          <Grid item xs={10}>
             <Card className="card">
               <CardContent>
-                <Typography variant="h5" component="h2" key={k}>
-                  <center>
+                <center>
+                  <Typography variant="h5" component="h2" key={k}>
                     <span>{tech.title}</span>
-                  </center>
-                </Typography>
-                <br />
-                {tech.content.map((c, k) => (
-                  <Typography variant="body2" key={k} className={classes.wrapIcon}>
-                    <center>
-                      <Avatar alt={c.imgAltText} src={c.imgSrc} className="avatar" />
-                      {c.name}
-                      {"  "}
-                    </center>
                   </Typography>
-                ))}
+                  <br />
+                  {tech.content.map((c, k) => (
+                    <Typography variant="body2" key={k} className={classes.wrapIcon}>
+                      <center>
+                        <Avatar alt={c.imgAltText} src={c.imgSrc} className="avatar" />
+                        {c.name}
+                        {"  "}
+                      </center>
+                    </Typography>
+                  ))}
+                </center>
               </CardContent>
             </Card>
           </Grid>
