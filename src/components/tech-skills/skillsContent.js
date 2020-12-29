@@ -19,7 +19,6 @@ import Node from "../../assets/images/techSkills/node.png";
 import PostgreSQL from "../../assets/images/techSkills/postgreSQL.png";
 import Python from "../../assets/images/techSkills/python.png";
 import ReactBootstrap from "../../assets/images/techSkills/react_bootstrap.png";
-import ReactRouter from "../../assets/images/techSkills/react-router.svg";
 import React from "../../assets/images/techSkills/react.png";
 import Redux from "../../assets/images/techSkills/redux.svg";
 import RestApi from "../../assets/images/techSkills/rest-api.png";
@@ -86,11 +85,6 @@ export const SkillsContent = [
         name: "React Bootstrap",
       },
       {
-        imgSrc: ReactRouter,
-        imgAltText: "ReactRouter",
-        name: "React Router",
-      },
-      {
         imgSrc: Redux,
         imgAltText: "Redux",
         name: "Redux",
@@ -106,11 +100,6 @@ export const SkillsContent = [
         name: "Java",
       },
       {
-        imgSrc: Microservices,
-        imgAltText: "Microservices",
-        name: "Microservices",
-      },
-      {
         imgSrc: Python,
         imgAltText: "Python",
         name: "Python",
@@ -124,6 +113,11 @@ export const SkillsContent = [
         imgSrc: RestApi,
         imgAltText: "RestApi",
         name: "Rest API",
+      },
+      {
+        imgSrc: Microservices,
+        imgAltText: "Microservices",
+        name: "Microservices",
       },
       {
         imgSrc: SpringBoot,
