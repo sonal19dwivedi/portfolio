@@ -4,7 +4,6 @@ import NavBar from "./components/nav-bar/navBar";
 import BottomNav from "./components/nav-bar/bottomNav";
 import Particles from "react-particles-js";
 import { backgroundAnimation } from "./components/intro/backgroundAnimation";
-import Loading from "./assets/images/loading.gif";
 import ReactGA from "react-ga";
 
 const App = () => {
@@ -14,7 +13,7 @@ const App = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 5000);
     ReactGA.initialize("G-P7L74SPMNC");
     ReactGA.pageview(window.location.pathname);
   }, []);
@@ -22,18 +21,18 @@ const App = () => {
   return (
     <div className="app">
       {loading ? (
-        <div className="loading">
-          <br /> <br />
-          <br /> <br />
-          <img src={Loading} alt="Loading" />
+        <div>
+          <div class="stars"></div>
+          <div class="twinkling"></div>
+          <div class="clouds"></div>
         </div>
       ) : (
         <div>
           <NavBar />
           <BottomNav />
+          <Particles className="particles particles-box" params={backgroundAnimation} />
         </div>
       )}
-      <Particles className="particles particles-box" params={backgroundAnimation} />
     </div>
   );
 };
