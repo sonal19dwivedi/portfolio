@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8af72636.chunk.css",
-    "main.js": "/portfolio/static/js/main.ae82619f.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.ae82619f.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.2653a034.chunk.css",
+    "main.js": "/portfolio/static/js/main.29e400d9.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.29e400d9.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.acc75d07.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.acc75d07.js.map",
     "static/js/2.6e990a34.chunk.js": "/portfolio/static/js/2.6e990a34.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.be2a8456.chunk.js": "/portfolio/static/js/3.be2a8456.chunk.js",
     "static/js/3.be2a8456.chunk.js.map": "/portfolio/static/js/3.be2a8456.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.8af72636.chunk.css.map": "/portfolio/static/css/main.8af72636.chunk.css.map",
+    "static/css/main.2653a034.chunk.css.map": "/portfolio/static/css/main.2653a034.chunk.css.map",
     "static/js/2.6e990a34.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6e990a34.chunk.js.LICENSE.txt",
     "static/media/androidStudio.811b3587.png": "/portfolio/static/media/androidStudio.811b3587.png",
     "static/media/award.9c1f89d2.JPG": "/portfolio/static/media/award.9c1f89d2.JPG",
@@ -27,7 +27,6 @@
     "static/media/javascript.07314975.svg": "/portfolio/static/media/javascript.07314975.svg",
     "static/media/jenkins.e28fe68a.png": "/portfolio/static/media/jenkins.e28fe68a.png",
     "static/media/jira.79401e79.svg": "/portfolio/static/media/jira.79401e79.svg",
-    "static/media/loading.5d696d35.gif": "/portfolio/static/media/loading.5d696d35.gif",
     "static/media/matplotlib.a131b46c.png": "/portfolio/static/media/matplotlib.a131b46c.png",
     "static/media/microservice.327cb261.jpg": "/portfolio/static/media/microservice.327cb261.jpg",
     "static/media/mongoDB.4370f3ef.jpg": "/portfolio/static/media/mongoDB.4370f3ef.jpg",
@@ -53,7 +52,7 @@
   "entrypoints": [
     "static/js/runtime-main.acc75d07.js",
     "static/js/2.6e990a34.chunk.js",
-    "static/css/main.8af72636.chunk.css",
-    "static/js/main.ae82619f.chunk.js"
+    "static/css/main.2653a034.chunk.css",
+    "static/js/main.29e400d9.chunk.js"
   ]
 }
