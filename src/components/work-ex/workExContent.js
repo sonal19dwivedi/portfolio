@@ -7,8 +7,9 @@ export const MY_WORK_EX = [
       <ul>
         <li>Got familiar with BitBucket.</li>
         <li>Got well acquainted with Confluence.</li>
-        <li>Got to work on advanced concepts of Java.</li>
-        <li>Designed and developed a testing tool from scratch using Electron, Typescript, React, Node, Javascript, HTML, and CSS.</li>
+        <li>Got to work on advanced concepts of Java, such as Multi-threading and collections.</li>
+        <li>Designed and developed a testing tool from scratch using GIT, Electron, Typescript, Node, React, HTML, Material-UI, and CSS.</li>
+        <li>Made use of JIRA for bug tracking, and project management functions.</li>
       </ul>
     ),
   },

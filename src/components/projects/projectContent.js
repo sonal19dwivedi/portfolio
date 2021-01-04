@@ -42,7 +42,6 @@ export const MY_PROJECTS = [
         </li>
         <li>The evaluation is done with a dataset partitioned from an open-source Yelp dataset of business reviews.</li>
         <li>The features investigated are the restaurant categories tags and the ratings given by a user and the user's friends.</li>
-        <li>A student can track the completed projects.</li>
         <li>
           In order to investigate if there exists a relationship between user's friends, user's fans, and user's review counts, the top fifteen users
           who had given the highest number of reviews were extracted.

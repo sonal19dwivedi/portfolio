@@ -36,11 +36,6 @@ export default function AboutMe() {
             <div className="imageContainer">{ABOUT_CONTENT}</div>
           </Grid>
         </Grid>
-        <a href="https://google.com/" target="_blank" rel="noopener noreferrer">
-          <Button variant="contained" color="primary" className={classes.button}>
-            Resume
-          </Button>
-        </a>
       </center>
     </div>
   );
