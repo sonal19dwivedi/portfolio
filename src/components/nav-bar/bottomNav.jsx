@@ -54,7 +54,7 @@ export default function BottomNav() {
         <Snackbar open={open} onClose={handleClose} TransitionComponent={transition} message={EMAIL} key={transition ? transition.name : ""} />
       </BottomNavigation>
       <Typography variant="body2" color="textSecondary" align="center">
-        Portfolio created using React, JavaScript, Node.js, HTML, Material UI, and CSS. Hosted on GitHub Pages. {<Copyright />} Sonal Dwivedi
+        Portfolio created using React, JavaScript, NodeJS, HTML, Material UI, and CSS. Hosted on GitHub Pages. {<Copyright />} Sonal Dwivedi
       </Typography>
     </div>
   );
