@@ -8,13 +8,13 @@ export const backgroundAnimation = {
       },
     },
     color: {
-      value: "#000000",
+      value: "#005f69",
     },
     shape: {
       type: "polygon",
       stroke: {
         width: 0,
-        color: "#000000",
+        color: "#005f69",
       },
       polygon: {
         nb_sides: 5,
@@ -26,7 +26,7 @@ export const backgroundAnimation = {
       },
     },
     opacity: {
-      value: 0.5,
+      value: 0.3,
       random: false,
       anim: {
         enable: false,
@@ -48,7 +48,7 @@ export const backgroundAnimation = {
     line_linked: {
       enable: true,
       distance: 150,
-      color: "#000000",
+      color: "#005f69",
       opacity: 0.4,
       width: 1,
     },
