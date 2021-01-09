@@ -19,7 +19,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="app">
+    <div>
       {loading ? (
         <div>
           <div class="stars"></div>

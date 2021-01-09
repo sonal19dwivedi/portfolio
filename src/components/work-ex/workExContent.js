@@ -1,5 +1,19 @@
 export const MY_WORK_EX = [
   {
+    timeline: "Jan 2021 - Apr 2021",
+    title: "Teaching Assistant",
+    company: "University of Ottawa",
+    details: (
+      <ul>
+        <li>Currently Working as a teaching assistant for the course Software Construction(Undergraduate second-year course).</li>
+        <li>
+          My responsibilities include taking online labs of students, correcting their lab reports and answering their questions related to UML,
+          regular expressions, BNF and basic theory of grammars and parsing, parser generators and Java concurrency programming.
+        </li>
+      </ul>
+    ),
+  },
+  {
     timeline: "May 2020 - Dec 2020",
     title: "Co-op Test Developer",
     company: "Kinaxis",
