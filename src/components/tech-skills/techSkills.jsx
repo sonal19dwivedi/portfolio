@@ -32,32 +32,33 @@ export default function TechSkills() {
           <br />
         </Grid>
       </Grid>
-
-      {SkillsContent.map((tech, k) => (
-        <Grow in={true}>
-          <div>
-            <Card className="card">
-              <CardContent>
-                <center>
-                  <Typography variant="h5" component="h2" key={k}>
-                    <span>{tech.title}</span>
-                  </Typography>
-                  <br />
-                  {tech.content.map((c, k) => (
-                    <Typography variant="body2" key={k} className={classes.wrapIcon}>
-                      <center>
-                        <Avatar alt={c.imgAltText} src={c.imgSrc} className="avatar" />
-                        {c.name}
-                        {"  "}
-                      </center>
+      <Grid container="row" justify="center" spacing={1}>
+        {SkillsContent.map((tech, k) => (
+          <Grid item xs={10} key={k}>
+            <Grow in={true}>
+              <Card className="card">
+                <CardContent>
+                  <center>
+                    <Typography variant="h5" component="h2">
+                      <span>{tech.title}</span>
                     </Typography>
-                  ))}
-                </center>
-              </CardContent>
-            </Card>
-          </div>
-        </Grow>
-      ))}
+                    <br />
+                    {tech.content.map((c, k) => (
+                      <Typography variant="body2" key={k} className={classes.wrapIcon}>
+                        <center>
+                          <Avatar alt={c.imgAltText} src={c.imgSrc} className="avatar" />
+                          {c.name}
+                          {"  "}
+                        </center>
+                      </Typography>
+                    ))}
+                  </center>
+                </CardContent>
+              </Card>
+            </Grow>
+          </Grid>
+        ))}
+      </Grid>
     </div>
   );
 }
