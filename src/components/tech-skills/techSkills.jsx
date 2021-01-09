@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Grid from "@material-ui/core/Grid";
+import Grow from "@material-ui/core/Grow";
 import Typography from "@material-ui/core/Typography";
 import { SkillsContent } from "./skillsContent";
 import "./techSkills.css";
@@ -12,8 +13,9 @@ const useStyles = makeStyles((theme) => ({
   wrapIcon: {
     verticalAlign: "middle",
     display: "inline-flex",
-    textAlign: "center",
+    alignContent: "center",
     padding: theme.spacing(2),
+    maxWidth: 400,
   },
 }));
 
@@ -22,7 +24,7 @@ export default function TechSkills() {
 
   return (
     <div className="techSkills">
-      <Grid container spacing={0} justify="center">
+      <Grid container justify="center">
         <Grid item xs={10}>
           <br />
           <h1>Technical Skills</h1>
@@ -31,9 +33,9 @@ export default function TechSkills() {
         </Grid>
       </Grid>
 
-      <Grid container spacing={1} justify="space-evenly" alignItems="center">
-        {SkillsContent.map((tech, k) => (
-          <Grid item xs={10}>
+      {SkillsContent.map((tech, k) => (
+        <Grow in={true}>
+          <div>
             <Card className="card">
               <CardContent>
                 <center>
@@ -53,9 +55,9 @@ export default function TechSkills() {
                 </center>
               </CardContent>
             </Card>
-          </Grid>
-        ))}
-      </Grid>
+          </div>
+        </Grow>
+      ))}
     </div>
   );
 }

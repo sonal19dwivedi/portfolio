@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+import Grow from "@material-ui/core/Grow";
 import Timeline from "@material-ui/lab/Timeline";
 import TimelineItem from "@material-ui/lab/TimelineItem";
 import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
@@ -53,17 +54,19 @@ export default function WorkExTimeline() {
               </TimelineDot>
               <TimelineConnector className={classes.color} />
             </TimelineSeparator>
-            <TimelineContent className="timelineContent">
-              <Paper elevation={3} className={classes.paper}>
-                <Typography variant="h6" component="h1" align="center">
-                  {ex.title}
-                </Typography>
-                <Typography variant="body2" color="textSecondary" align="center">
-                  {ex.company}
-                </Typography>
-                <Typography align="left">{ex.details}</Typography>
-              </Paper>
-            </TimelineContent>
+            <Grow in={true}>
+              <TimelineContent className="timelineContent">
+                <Paper elevation={3} className={classes.paper}>
+                  <Typography variant="h6" component="h1" align="center">
+                    {ex.title}
+                  </Typography>
+                  <Typography variant="body2" color="textSecondary" align="center">
+                    {ex.company}
+                  </Typography>
+                  <Typography align="left">{ex.details}</Typography>
+                </Paper>
+              </TimelineContent>
+            </Grow>
           </TimelineItem>
         ))}
         <TimelineItem>

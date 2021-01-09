@@ -1,8 +1,8 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
 import Avatar from "@material-ui/core/Avatar";
+import Grow from "@material-ui/core/Grow";
 import HeadShot from "../../assets/images/about/headShot.jpg";
 import { ABOUT_CONTENT, PAGE_TITLE } from "./aboutContent";
 import "./aboutMe.css";
@@ -22,20 +22,22 @@ export default function AboutMe() {
   return (
     <div className="aboutMe">
       <center>
-        <Grid container spacing={0} justify="center">
-          <Grid item xs={10}>
-            <br />
-            {PAGE_TITLE}
-            <br />
-            <br />
+        <Grow in={true}>
+          <Grid container spacing={0} justify="center">
+            <Grid item xs={10}>
+              <br />
+              {PAGE_TITLE}
+              <br />
+              <br />
+            </Grid>
+            <Grid item xs={10} sm={5}>
+              <Avatar alt="Sonal Dwivedi" src={HeadShot} className={classes.large} />
+            </Grid>
+            <Grid item xs={10} sm={5}>
+              <div className="imageContainer">{ABOUT_CONTENT}</div>
+            </Grid>
           </Grid>
-          <Grid item xs={10} sm={5}>
-            <Avatar alt="Sonal Dwivedi" src={HeadShot} className={classes.large} />
-          </Grid>
-          <Grid item xs={10} sm={5}>
-            <div className="imageContainer">{ABOUT_CONTENT}</div>
-          </Grid>
-        </Grid>
+        </Grow>
       </center>
     </div>
   );

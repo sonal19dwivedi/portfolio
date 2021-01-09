@@ -2,9 +2,37 @@
   z-index: 111;
 }
 
-.projects h1 {
+.projectsandpublications {
   font-family: "Arial", "Courier New", monospace;
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
   letter-spacing: 4px;
   text-align: center;
+}
+
+.button {
+  background-color: #005f69;
+  z-index: 11;
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+.button:hover {
+  background: #337f87;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }

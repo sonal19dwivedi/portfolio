@@ -6,11 +6,13 @@ export const MY_PROJECTS = [
     github: "https://github.com/katherineyecc/ProjectTracker",
     description: (
       <ul>
+        <li>Programming Language: Java</li>
+        <li>IDE: Android Studio</li>
         <li>
           Developed an application for the students in order to keep track of their projects for different courses. It does assist the students to
           maintain the due date of different projects.
         </li>
-        <li>Project Tracked Mobile Application has the following functionalities:</li>
+        <li>Project Tracker Mobile Application has the following functionalities:</li>
         <ul>
           <li>A student can create/modify/delete an entry for a new project.</li>
           <li>A student can track the completed projects.</li>
@@ -34,6 +36,9 @@ export const MY_PROJECTS = [
     github: "https://github.com/sonal19dwivedi/eCommerce",
     description: (
       <ul>
+        <li>Programming language: Python</li>
+        <li>Libraries used: Pandas, NumPy, Matplotlib</li>
+        <li>Tools: Anaconda - Jupyter Notebook</li>
         <li>
           Recommender systems have become an integral research focus as growing volumes of available data in the information world has shifted a focus
           from data extraction to data filtering. Challenges with recommender systems come with choosing which features to use to filter data and
@@ -57,6 +62,9 @@ export const MY_PROJECTS = [
     github: "https://github.com/sonal19dwivedi/OntologyBuilding/blob/master/OntologyBuilding.ipynb",
     description: (
       <ul>
+        <li>Programming Language: Python</li>
+        <li>Libraries used: Requests, Pandas, NumPy, Matplotlib, Seaborn, BeautifulSoup, Natural Language Toolkit</li>
+        <li>Tools: Anaconda - Jupyter Notebook</li>
         <li>Did build a corpus by the means of web scrapping. Made use of Wikipedia as a data source.</li>
         <li>Did term extraction using Named Entity Recognition.</li>
         <li>Did perform relation extraction using Shallow Parsing and Dependency Parsing techniques.</li>
@@ -70,6 +78,8 @@ export const MY_PROJECTS = [
     timeline: "Feb 2020",
     description: (
       <ul>
+        <li>Programming Language: Java</li>
+        <li>IDE: Android Studio</li>
         <li>Developed an app that continuously recognizes 4 of the user's activities (walking, running, in-vehicle, and still).</li>
         <li>Following were the features offered by this application:</li>
         <ul>
@@ -88,6 +98,8 @@ export const MY_PROJECTS = [
     github: "https://github.com/sonal19dwivedi/notepad-master",
     description: (
       <ul>
+        <li>Programming Language: Java</li>
+        <li>IDE: Android Studio</li>
         <li>Developed a mobile application to help it's users create/modify/save/delete notes.</li>
         <li>Enabled sharing notes via email or Facebook.</li>
         <li>This application also did allow the user to add background colors to individual notes.</li>
@@ -101,6 +113,9 @@ export const MY_PROJECTS = [
     timeline: "Sep 2019 – Nov 2019",
     description: (
       <ul>
+        <li>Programming Language: Python</li>
+        <li>Libraries used: Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, Imblearn</li>
+        <li>Tools: Anaconda - Jupyter Notebook</li>
         <li>
           Started this project with data exploration and evaluate co-relations between parameters of the dataset. Based on the observations
           pre-processed the data and trained the dataset using
@@ -125,6 +140,8 @@ export const MY_PROJECTS = [
     github: "",
     description: (
       <ul>
+        <li>Programming Language: JavaScript</li>
+        <li>IDE: Visual Studio Code</li>
         <li>Developed a Live Video chat/text system using ReactJS, Socket.io, Node.JS, and Websockets.</li>
       </ul>
     ),

@@ -9,7 +9,7 @@ import Intro from "../intro/intro";
 import TechSkills from "../tech-skills/techSkills";
 import WorkExTimeline from "../work-ex/workEx";
 import Awards from "../awards/awards";
-import Projects from "../projects/projects";
+import ProjectsAndPublications from "../projects/projectsAndPublications";
 
 export default function NavBar() {
   const [selectedTab, setSelectedTab] = React.useState(0);
@@ -31,7 +31,7 @@ export default function NavBar() {
             <Tab label="About" />
             <Tab label="Technical Skills" />
             <Tab label="Work Experience" />
-            <Tab label="Projects" />
+            <Tab label="Projects/Publications" />
             <Tab label="Honors & Awards" />
           </Tabs>
         </Toolbar>
@@ -40,7 +40,7 @@ export default function NavBar() {
       {selectedTab === 1 && <AboutMe />}
       {selectedTab === 2 && <TechSkills />}
       {selectedTab === 3 && <WorkExTimeline />}
-      {selectedTab === 4 && <Projects />}
+      {selectedTab === 4 && <ProjectsAndPublications />}
       {selectedTab === 5 && <Awards />}
     </div>
   );
