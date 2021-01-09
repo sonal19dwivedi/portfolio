@@ -34,9 +34,9 @@ export default function TechSkills() {
       </Grid>
       <Grid container="row" justify="center" spacing={1}>
         {SkillsContent.map((tech, k) => (
-          <Grid item xs={10} key={k}>
+          <Grid item xs={10} key={k} className="card">
             <Grow in={true}>
-              <Card className="card">
+              <Card>
                 <CardContent>
                   <center>
                     <Typography variant="h5" component="h2">

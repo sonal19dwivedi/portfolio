@@ -54,8 +54,8 @@ export default function WorkExTimeline() {
               </TimelineDot>
               <TimelineConnector className={classes.color} />
             </TimelineSeparator>
-            <Grow in={true}>
-              <TimelineContent className="timelineContent">
+            <TimelineContent className="timelineContent">
+              <Grow in={true}>
                 <Paper elevation={3} className={classes.paper}>
                   <Typography variant="h6" component="h1" align="center">
                     {ex.title}
@@ -65,8 +65,8 @@ export default function WorkExTimeline() {
                   </Typography>
                   <Typography align="left">{ex.details}</Typography>
                 </Paper>
-              </TimelineContent>
-            </Grow>
+              </Grow>
+            </TimelineContent>
           </TimelineItem>
         ))}
         <TimelineItem>
