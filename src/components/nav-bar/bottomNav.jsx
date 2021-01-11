@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
@@ -9,6 +9,8 @@ import Email from "@material-ui/icons/Email";
 import Snackbar from "@material-ui/core/Snackbar";
 import Slide from "@material-ui/core/Slide";
 import Typography from "@material-ui/core/Typography";
+import Popup from "../controls/PopUp";
+import EmailForm from "./email/emailForm";
 import "./navBar.css";
 
 const EMAIL = "s19dwivedi@gmail.com";
@@ -28,6 +30,7 @@ const useStyles = makeStyles({
 export default function BottomNav() {
   const classes = useStyles();
   const [value, setValue] = React.useState("recents");
+  const [openPopup, setOpenPopup] = useState(false);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -49,9 +52,19 @@ export default function BottomNav() {
     <div className="footer sticky-footer">
       <BottomNavigation value={value} onChange={handleChange} className={classes.bottomNav}>
         <BottomNavigationAction label="LinkedIn" value="LinkedIn" icon={<LinkedIn />} onClick={handleClick(openLinkedIn)}></BottomNavigationAction>
-        <BottomNavigationAction label="E-mail" value="E-mail" icon={<Email />} onClick={handleClick(popUpEmail)} />
+        <BottomNavigationAction
+          label="E-mail"
+          value="E-mail"
+          icon={<Email />}
+          onClick={() => {
+            setOpenPopup(true);
+          }}
+        />
         <BottomNavigationAction label="GitHub" value="GitHub" icon={<GitHub />} onClick={handleClick(openGitHub)} />
         <Snackbar open={open} onClose={handleClose} TransitionComponent={transition} message={EMAIL} key={transition ? transition.name : ""} />
+        <Popup title="Email Sonal" id="emailPopUp" openPopup={openPopup} setOpenPopup={setOpenPopup}>
+          <EmailForm />
+        </Popup>
       </BottomNavigation>
       <Typography variant="body2" color="textSecondary" align="center">
         Portfolio created using React, JavaScript, NodeJS, HTML, Material UI, and CSS. Hosted on GitHub Pages. {<Copyright />} Sonal Dwivedi
@@ -59,11 +72,6 @@ export default function BottomNav() {
     </div>
   );
 }
-
-function popUpEmail(props) {
-  return <Slide {...props} direction="left" />;
-}
-
 function openLinkedIn() {
   return window.open("https://www.linkedin.com/in/sonal-dwivedi/", "_blank", "noopener noreferrer");
 }
