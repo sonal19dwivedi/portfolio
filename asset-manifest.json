@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.410666cb.chunk.css",
-    "main.js": "/portfolio/static/js/main.4e69d55d.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.4e69d55d.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.aa3d0e0c.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.aa3d0e0c.js.map",
-    "static/js/2.021ef688.chunk.js": "/portfolio/static/js/2.021ef688.chunk.js",
-    "static/js/2.021ef688.chunk.js.map": "/portfolio/static/js/2.021ef688.chunk.js.map",
-    "static/js/3.65a66d6d.chunk.js": "/portfolio/static/js/3.65a66d6d.chunk.js",
-    "static/js/3.65a66d6d.chunk.js.map": "/portfolio/static/js/3.65a66d6d.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.810bc237.chunk.css",
+    "main.js": "/portfolio/static/js/main.20bf06e2.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.20bf06e2.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.6043e766.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.6043e766.js.map",
+    "static/js/2.a84a6433.chunk.js": "/portfolio/static/js/2.a84a6433.chunk.js",
+    "static/js/2.a84a6433.chunk.js.map": "/portfolio/static/js/2.a84a6433.chunk.js.map",
+    "static/js/3.a0c21eae.chunk.js": "/portfolio/static/js/3.a0c21eae.chunk.js",
+    "static/js/3.a0c21eae.chunk.js.map": "/portfolio/static/js/3.a0c21eae.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.410666cb.chunk.css.map": "/portfolio/static/css/main.410666cb.chunk.css.map",
-    "static/js/2.021ef688.chunk.js.LICENSE.txt": "/portfolio/static/js/2.021ef688.chunk.js.LICENSE.txt",
+    "static/css/main.810bc237.chunk.css.map": "/portfolio/static/css/main.810bc237.chunk.css.map",
+    "static/js/2.a84a6433.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a84a6433.chunk.js.LICENSE.txt",
     "static/media/androidStudio.811b3587.png": "/portfolio/static/media/androidStudio.811b3587.png",
     "static/media/award.9c1f89d2.JPG": "/portfolio/static/media/award.9c1f89d2.JPG",
     "static/media/bitbucket.d391ca23.svg": "/portfolio/static/media/bitbucket.d391ca23.svg",
@@ -49,9 +49,9 @@
     "static/media/webpack.47692505.png": "/portfolio/static/media/webpack.47692505.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.aa3d0e0c.js",
-    "static/js/2.021ef688.chunk.js",
-    "static/css/main.410666cb.chunk.css",
-    "static/js/main.4e69d55d.chunk.js"
+    "static/js/runtime-main.6043e766.js",
+    "static/js/2.a84a6433.chunk.js",
+    "static/css/main.810bc237.chunk.css",
+    "static/js/main.20bf06e2.chunk.js"
   ]
 }
