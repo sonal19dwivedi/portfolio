@@ -7,7 +7,6 @@ import GitHub from "@material-ui/icons/GitHub";
 import LinkedIn from "@material-ui/icons/LinkedIn";
 import Email from "@material-ui/icons/Email";
 import Snackbar from "@material-ui/core/Snackbar";
-import Slide from "@material-ui/core/Slide";
 import Typography from "@material-ui/core/Typography";
 import Popup from "../controls/PopUp";
 import EmailForm from "./email/emailForm";
