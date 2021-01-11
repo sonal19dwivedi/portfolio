@@ -9,7 +9,7 @@ import Description from "@material-ui/icons/Description";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grow from "@material-ui/core/Grow";
-import Popup from "./controls/PopUp";
+import Popup from "../controls/PopUp";
 import { MY_PROJECTS } from "./projectContent";
 import "./projects.css";
 
