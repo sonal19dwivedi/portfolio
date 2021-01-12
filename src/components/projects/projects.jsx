@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
@@ -11,6 +11,7 @@ import Typography from "@material-ui/core/Typography";
 import Grow from "@material-ui/core/Grow";
 import Popup from "../controls/PopUp";
 import { MY_PROJECTS } from "./projectContent";
+import ReactGA from "react-ga";
 import "./projects.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -20,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Projects(props) {
+  useEffect(() => {
+    ReactGA.initialize("UA-187106101-1");
+    ReactGA.pageview("Projects");
+  }, []);
   const [openPopup, setOpenPopup] = useState(false);
   const [selectedProject, setProjectTitle] = useState(null);
   const [selectedProjectDescription, setProjectDescription] = useState(null);

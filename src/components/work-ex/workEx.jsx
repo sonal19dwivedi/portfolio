@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Grow from "@material-ui/core/Grow";
@@ -14,6 +14,7 @@ import Paper from "@material-ui/core/Paper";
 import School from "@material-ui/icons/School";
 import Typography from "@material-ui/core/Typography";
 import { MY_WORK_EX } from "./workExContent";
+import ReactGA from "react-ga";
 import "./workEx.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -27,6 +28,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function WorkExTimeline() {
   const classes = useStyles();
+
+  useEffect(() => {
+    ReactGA.initialize("UA-187106101-1");
+    ReactGA.pageview("WorkEx");
+  }, []);
 
   return (
     <div>

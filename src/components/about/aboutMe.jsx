@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
 import Grow from "@material-ui/core/Grow";
 import HeadShot from "../../assets/images/about/headShot.jpg";
 import { ABOUT_CONTENT, PAGE_TITLE } from "./aboutContent";
+import ReactGA from "react-ga";
 import "./aboutMe.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -19,6 +20,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function AboutMe() {
   const classes = useStyles();
+  useEffect(() => {
+    ReactGA.initialize("UA-187106101-1");
+    ReactGA.pageview("About");
+  }, []);
   return (
     <div className="aboutMe">
       <center>

@@ -7,11 +7,14 @@ import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/icons/Link";
 import { MY_PUBLICATIONS } from "./publicationsContent";
+import ReactGA from "react-ga";
 import "./projects.css";
 
 export default class Publications extends React.Component {
   constructor(props) {
     super();
+    ReactGA.initialize("UA-187106101-1");
+    ReactGA.pageview("Publications");
   }
   render() {
     return (

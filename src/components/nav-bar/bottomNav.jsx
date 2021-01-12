@@ -6,13 +6,11 @@ import Copyright from "@material-ui/icons/Copyright";
 import GitHub from "@material-ui/icons/GitHub";
 import LinkedIn from "@material-ui/icons/LinkedIn";
 import Email from "@material-ui/icons/Email";
-import Snackbar from "@material-ui/core/Snackbar";
+import ReactGA from "react-ga";
 import Typography from "@material-ui/core/Typography";
 import Popup from "../controls/PopUp";
 import EmailForm from "./email/emailForm";
 import "./navBar.css";
-
-const EMAIL = "s19dwivedi@gmail.com";
 
 const useStyles = makeStyles({
   bottomNav: {
@@ -35,22 +33,10 @@ export default function BottomNav() {
     setValue(newValue);
   };
 
-  const [open, setOpen] = React.useState(false);
-  const [transition, setTransition] = React.useState(undefined);
-
-  const handleClick = (Transition) => () => {
-    setTransition(() => Transition);
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
   return (
     <div className="footer sticky-footer">
       <BottomNavigation value={value} onChange={handleChange} className={classes.bottomNav}>
-        <BottomNavigationAction label="LinkedIn" value="LinkedIn" icon={<LinkedIn />} onClick={handleClick(openLinkedIn)}></BottomNavigationAction>
+        <BottomNavigationAction label="LinkedIn" value="LinkedIn" icon={<LinkedIn />} onClick={openLinkedIn}></BottomNavigationAction>
         <BottomNavigationAction
           label="E-mail"
           value="E-mail"
@@ -59,9 +45,8 @@ export default function BottomNav() {
             setOpenPopup(true);
           }}
         />
-        <BottomNavigationAction label="GitHub" value="GitHub" icon={<GitHub />} onClick={handleClick(openGitHub)} />
-        <Snackbar open={open} onClose={handleClose} TransitionComponent={transition} message={EMAIL} key={transition ? transition.name : ""} />
-        <Popup title="Email Sonal" id="emailPopUp" openPopup={openPopup} setOpenPopup={setOpenPopup}>
+        <BottomNavigationAction label="GitHub" value="GitHub" icon={<GitHub />} onClick={openGitHub} />
+        <Popup title="Send me an Email" id="emailPopUp" openPopup={openPopup} setOpenPopup={setOpenPopup}>
           <EmailForm />
         </Popup>
       </BottomNavigation>
@@ -72,9 +57,17 @@ export default function BottomNav() {
   );
 }
 function openLinkedIn() {
+  ReactGA.event({
+    category: "BottomNavigationAction",
+    action: "LinkedIn",
+  });
   return window.open("https://www.linkedin.com/in/sonal-dwivedi/", "_blank", "noopener noreferrer");
 }
 
 function openGitHub() {
+  ReactGA.event({
+    category: "BottomNavigationAction",
+    action: "GitHub",
+  });
   return window.open("https://github.com/sonal19dwivedi", "_blank", "noopener noreferrer");
 }

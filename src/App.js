@@ -14,8 +14,8 @@ const App = () => {
     setTimeout(() => {
       setLoading(false);
     }, 5000);
-    ReactGA.initialize("G-P7L74SPMNC");
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.initialize("UA-187106101-1");
+    ReactGA.pageview("Home");
   }, []);
 
   return (

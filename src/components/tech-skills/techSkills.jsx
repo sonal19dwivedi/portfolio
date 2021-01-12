@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Avatar from "@material-ui/core/Avatar";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
@@ -7,6 +7,7 @@ import Grid from "@material-ui/core/Grid";
 import Grow from "@material-ui/core/Grow";
 import Typography from "@material-ui/core/Typography";
 import { SkillsContent } from "./skillsContent";
+import ReactGA from "react-ga";
 import "./techSkills.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -21,6 +22,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function TechSkills() {
   const classes = useStyles();
+
+  useEffect(() => {
+    ReactGA.initialize("UA-187106101-1");
+    ReactGA.pageview("Skills");
+  }, []);
 
   return (
     <div className="techSkills">

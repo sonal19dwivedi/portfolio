@@ -1,10 +1,11 @@
 import Button from "@material-ui/core/Button";
 import emailjs from "emailjs-com";
 import Grid from "@material-ui/core/Grid";
-import React from "react";
+import React, { useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Send from "@material-ui/icons/Send";
 import TextField from "@material-ui/core/TextField";
+import ReactGA from "react-ga";
 
 const useStyles = makeStyles((theme) => ({
   formStyle: {
@@ -22,31 +23,55 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function EmailForm() {
+  useEffect(() => {
+    ReactGA.initialize("UA-187106101-1");
+    ReactGA.pageview("Email");
+  }, []);
+
   const [name, setName] = React.useState(null);
   const [nameError, setNameError] = React.useState(null);
   const [email, setEmail] = React.useState(null);
   const [emailError, setEmailError] = React.useState(null);
+  const [subject, setSubject] = React.useState(null);
+  const [subjectError, setSubjectError] = React.useState(null);
+  const [message, setMessage] = React.useState(null);
+  const [messageError, setMessageError] = React.useState(null);
 
   const classes = useStyles();
 
-  function checkName() {
-    if (name === "" || !/^[a-z][a-zs]*$/i.test(name)) {
+  function validateName() {
+    if (name === null || name === "" || !/^[a-z][a-zs]*$/i.test(name)) {
       setNameError("Please enter a valid name.");
     } else {
       setNameError(null);
     }
   }
 
-  function checkEmail() {
-    if (email === "" || !/\S+@\S+\.\S+/.test(email)) {
+  function validateEmail() {
+    if (email === null || email === "" || !/\S+@\S+\.\S+/.test(email)) {
       setEmailError("Please enter a valid email address.");
     } else {
       setEmailError(null);
     }
   }
 
+  function validateSubject() {
+    if (subject === null || subject === "") {
+      setSubjectError("Please enter a valid Subject.");
+    } else {
+      setSubjectError(null);
+    }
+  }
+
+  function validateMessage() {
+    if (message === null || message === "") {
+      setMessageError("Your email has no message.");
+    } else {
+      setMessageError(null);
+    }
+  }
+
   function sendEmail(form) {
-    console.log("sending!");
     form.preventDefault();
     emailjs.sendForm("service_344te7q", "template_wu7w4im", form.target, "user_fyw6xWYzuLIfaL8wNLGtS").then(
       (result) => {
@@ -76,7 +101,7 @@ export default function EmailForm() {
                 autoComplete="fname"
                 helperText={nameError}
                 onChange={(e) => setName(e.target.value)}
-                onBlur={checkName}
+                onBlur={validateName}
               />
             </Grid>
             <Grid item xs={12}>
@@ -91,14 +116,39 @@ export default function EmailForm() {
                 name="from_email"
                 autoComplete="email"
                 onChange={(e) => setEmail(e.target.value)}
-                onBlur={checkEmail}
+                onBlur={validateEmail}
               />
             </Grid>
             <Grid item xs={12}>
-              <TextField variant="outlined" required fullWidth id="subject" label="Subject" name="subject" autoComplete="subject" />
+              <TextField
+                variant="outlined"
+                error={subjectError}
+                helperText={subjectError}
+                required
+                fullWidth
+                id="subject"
+                label="Subject"
+                name="subject"
+                autoComplete="subject"
+                onChange={(e) => setSubject(e.target.value)}
+                onBlur={validateSubject}
+              />
             </Grid>
             <Grid item xs={12}>
-              <TextField variant="outlined" multiline required rows={5} fullWidth name="message" label="Message" id="message" />
+              <TextField
+                variant="outlined"
+                error={messageError}
+                helperText={messageError}
+                multiline
+                required
+                rows={5}
+                fullWidth
+                name="message"
+                label="Message"
+                id="message"
+                onChange={(e) => setMessage(e.target.value)}
+                onBlur={validateMessage}
+              />
             </Grid>
           </Grid>
           <center>
