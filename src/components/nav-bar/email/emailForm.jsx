@@ -73,15 +73,19 @@ export default function EmailForm() {
 
   function sendEmail(form) {
     form.preventDefault();
-    emailjs.sendForm("service_344te7q", "template_wu7w4im", form.target, "user_fyw6xWYzuLIfaL8wNLGtS").then(
-      (result) => {
-        alert("Thank you for your email!");
-      },
-      (error) => {
-        alert("Oops! Something went wrong. Please try again!");
-      }
-    );
-    form.target.reset();
+    if (!nameError && !emailError && !subjectError && !messageError) {
+      emailjs.sendForm("service_344te7q", "template_wu7w4im", form.target, "user_fyw6xWYzuLIfaL8wNLGtS").then(
+        (result) => {
+          alert("Thank you for your email!");
+        },
+        (error) => {
+          alert("Oops! Something went wrong. Please try again!");
+        }
+      );
+      form.target.reset();
+    } else {
+      alert("Please provide a valid input.");
+    }
   }
 
   return (
