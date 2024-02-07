@@ -9,7 +9,8 @@ export const MY_WORK_EX = [
         <li>Extended an existing CICD pipeline to run tests from the logical testing framework using C#.</li>
         <li>Made use of Bitbucket to review code and provide feedback to junior team members.</li>
         <li>Periodically held demos to keep the team up to date with the developments.</li>
-        <li>on critical bugs and escalations to provide a timely fix to the customers.</li>
+        <li>Served as a mentor for cooperative education (co-op) students.</li>
+        <li>Worked on critical bugs and escalations to provide a timely fix to the customers.</li>
       </ul>
     ),
   },
