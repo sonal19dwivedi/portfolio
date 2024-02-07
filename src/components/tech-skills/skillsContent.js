@@ -32,7 +32,6 @@ import Np from "../../assets/images/techSkills/numpy.svg";
 import Spacy from "../../assets/images/techSkills/spacy.png";
 import Nltk from "../../assets/images/techSkills/nltk.png";
 import Matplotlib from "../../assets/images/techSkills/matplotlib.png";
-import Seaborn from "../../assets/images/techSkills/sb.svg";
 import Bsoup from "../../assets/images/techSkills/bsoup.png";
 
 export const SkillsContent = [
@@ -238,11 +237,6 @@ export const SkillsContent = [
         imgSrc: Matplotlib,
         imgAltText: "Matplotlib",
         name: "Matplotlib",
-      },
-      {
-        imgSrc: Seaborn,
-        imgAltText: "Seaborn",
-        name: "Seaborn",
       },
       {
         imgSrc: Nltk,
