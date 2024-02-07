@@ -15,7 +15,7 @@ const Intro = () => (
       <div className="sub1">
         <Typewriter
           options={{
-            strings: ["Master of Computer Science Student", "Developer", "Avid Learner"],
+            strings: ["Full Stack Developer", "Avid Learner", "Explorer"],
             autoStart: true,
             loop: true,
             delay: 50,
