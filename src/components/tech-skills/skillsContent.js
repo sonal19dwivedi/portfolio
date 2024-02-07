@@ -33,6 +33,7 @@ import Spacy from "../../assets/images/techSkills/spacy.png";
 import Nltk from "../../assets/images/techSkills/nltk.png";
 import Matplotlib from "../../assets/images/techSkills/matplotlib.png";
 import Bsoup from "../../assets/images/techSkills/bsoup.png";
+import cSharp from "../../assets/images/techSkills/cSharp.png"
 
 export const SkillsContent = [
   {
@@ -97,6 +98,11 @@ export const SkillsContent = [
         imgSrc: Java,
         imgAltText: "Java",
         name: "Java",
+      },
+      {
+        imgSrc: cSharp,
+        imgAltText: "C#",
+        name: "C#",
       },
       {
         imgSrc: Python,
