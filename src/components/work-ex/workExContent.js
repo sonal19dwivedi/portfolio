@@ -1,30 +1,52 @@
 export const MY_WORK_EX = [
   {
-    timeline: "Jan 2023 - Present",
-    title: "Software Developer II",
+    timeline: "May 2021 - Present",
+    title: "Senior Software Developer,\nSoftware Developer II,\nSoftware Developer I",
     company: "Kinaxis",
     details: (
       <ul>
-        <li>Made sure that the logical testing framework worked end to end by designing, implementing, and collaborating on the design of the new logical test framework while supporting team members on concerns, impediments, and managing dependencies (internally and externally).</li>
-        <li>Extended an existing CICD pipeline to run tests from the logical testing framework using C#.</li>
-        <li>Made use of Bitbucket to review code and provide feedback to junior team members.</li>
-        <li>Periodically held demos to keep the team up to date with the developments.</li>
-        <li>Served as a mentor for cooperative education (co-op) students.</li>
-        <li>Worked on critical bugs and escalations to provide a timely fix to the customers.</li>
-      </ul>
-    ),
-  },
-  {
-    timeline: "May 2021 - Jan 2023",
-    title: "Software Developer I",
-    company: "Kinaxis",
-    details: (
-      <ul>
-        <li>Developed a script for rapid VM and BM setup, reducing software installation time from a day to under an hour, demonstrating automation and optimization skills.</li>
-        <li>Proposed and implemented a logical testing framework based on .Net Framework, NUnit and C#, leading to dynamic and 90% automated test creation, reduced manual verification, improved error detection, and eliminated redundancy in regression tests.</li>
-        <li>Contributed to an Automated Functional Testing CICD Jenkins pipeline by identifying and fixing bugs, enhancing test efficiency and accuracy.</li>
-        <li>Ensured clean builds and timely issue resolution as a Jenkins Build Watcher Consultant, onboarded and trained 12 Primary Build Validation Watchers, fostering collaboration across time zones.</li>
-        <li>Defined and implemented testing strategies for multiple features, ensuring successful feature delivery and product quality.</li>
+        <li><b>Designed and implemented a logical testing framework</b> using .NET Framework, NUnit, and C#,
+            resulting in 90% automated test creation, dynamic testing processes, and significant reductions in manual
+            verification efforts. This led to improved error detection and the elimination of redundancy in regression
+            tests.
+        </li>
+              <ul>
+                <li>
+                Achieved faster run times, reduced false positives/negatives, and enhanced encapsulation with
+the new framework.
+                </li>
+                <li>
+                Led a team of five, providing support on technical concerns, removing impediments, and
+managing internal and external dependencies.
+                </li>
+              </ul>
+        <li><b>Spearheaded the migration of 35,000+</b> tests from Kinaxis's legacy testing framework to the newly
+developed logical testing framework.</li>
+              <ul>
+                <li>
+                Extended existing CI/CD pipelines to integrate the new testing framework, utilizing C# and
+Groovy.
+                </li>
+              </ul>
+        <li><b>Mentored junior developers and co-ops,</b> conducting code reviews via Bitbucket and providing
+constructive feedback.</li>
+              <ul>
+                <li>
+                Successfully implemented side projects, including a custom linting tool using Roslyn Code
+Analyzer and optimizing build times with Groovy scripts in Jenkins.
+                </li>
+              </ul>
+
+        <li><b>Developed an automated VM/BM setup powershell script,</b> reducing software installation time from a
+full day to under an hour.</li>
+        <li><b>Served as a Jenkins Build Watcher Consultant,</b> ensuring clean builds and prompt issue resolution.
+Onboarded and trained 12 Primary Build Validation Watchers, promoting collaboration and reliability
+across global teams.</li>
+        <li><b>Defined and executed testing strategies</b> for multiple features, consistently delivering high-quality
+products and meeting project deadlines.</li>
+        <li><b>Conducted regular demos</b> to keep the team informed of progress and new developments.</li>
+        <li><b>Led technical interviews for software developer candidates,</b> evaluating their technical skills, cultural
+fit, and potential contributions to the team as a senior technical member.</li>
       </ul>
     ),
   },
@@ -34,14 +56,25 @@ export const MY_WORK_EX = [
     company: "Kinaxis",
     details: (
       <ul>
-        <li>Designed and developed a supply chain game from scratch with Kinaxis's Co-founder. The game is currently used by Kinaxis in Academia.</li>
-        <li>Finalized JavaScript, React, Node, HTML, and CSS for the technologies to be used.</li>
-        <li>Successfully executed Proof of Concepts demonstrating the integration of a backend database with an independent frontend for the Supply Chain Game project.</li>
-        <li>Developed and implemented essential Javascript APIs, enabling seamless data exchange and manipulation between the Game UI and the Backend.</li>
-        <li>Contributed significantly to the initial front-end development of the Game, showcasing expertise in user interface design and user experience optimization.</li>
-        <li>Led the initiation of a security assessment, ensuring the integrity of the project. Results revealed a robust system with no major security loopholes.</li>
-        <li>Managed team tasks effectively utilizing JIRA, ensuring smooth coordination and progress tracking among team members.</li>
-      </ul>
+        <li><b>Designed and developed a Supply Chain Game</b> from the ground up in collaboration with Kinaxis's Cofounder,
+now actively used in academic settings.</li>
+        <ul>
+          <li>Selected and finalized the technology stack, including JavaScript, React, Node.js, HTML, and
+CSS.</li>
+        </ul>
+        <li><b>Executed Proof of Concepts (PoCs)</b> to successfully integrate a backend database with an independent
+frontend for the Supply Chain Game project.</li>
+        <ul>
+          <li><b>Developed and implemented core JavaScript APIs,</b> facilitating seamless data exchange and
+manipulation between the game's UI and backend systems.</li>
+        </ul>
+        <li><b>Led front-end development efforts,</b> contributing to UI design and UX optimization to create an
+engaging and intuitive user experience.</li>
+        <li><b>Initiated and led a comprehensive security assessment,</b> which confirmed the project's integrity with no
+major vulnerabilities detected.</li>
+        <li><b>Effectively managed project tasks</b> using JIRA, ensuring smooth team coordination and efficient
+progress tracking.</li>
+        </ul>
     ),
   },
   {
@@ -64,11 +97,16 @@ export const MY_WORK_EX = [
     company: "Kinaxis",
     details: (
       <ul>
-        <li>Got familiar with BitBucket.</li>
-        <li>Got well acquainted with Confluence.</li>
-        <li>Got to work on advanced concepts of Java, such as Multi-threading and collections.</li>
-        <li>Designed and developed a testing tool from scratch using GIT, Electron, Typescript, Node, React, HTML, Material-UI, and CSS.</li>
-        <li>Made use of JIRA for bug tracking, and project management functions.</li>
+        <li><b>Worked extensively with advanced Java concepts,</b> including multi-threading and collections, to
+enhance performance and efficiency.</li>
+        <li><b>Designed and developed a comprehensive testing tool</b> from the ground up using a diverse technology
+stack, including Git, Electron, JavaScript, TypeScript, Node.js, React, HTML, Material-UI, and CSS.</li>
+        <li><b>Gained proficiency in Bitbucket and Confluence,</b> leveraging these tools for version control,
+collaboration, and documentation.</li>
+        <li><b>Utilized JIRA for bug tracking and project management,</b> ensuring smooth workflow and task
+prioritization.</li>
+        <li><b>Operated within an Agile development environment,</b> contributing to iterative development and
+continuous improvement processes.</li>
       </ul>
     ),
   },
@@ -108,15 +146,23 @@ export const MY_WORK_EX = [
     company: "Tata Consultancy Services",
     details: (
       <ul>
-        <li>Developed REST services and micro-service architecture based application.</li>
-        <li>Designed and developed java micro web services on spring boot platform.</li>
-        <li>Got well acquainted with MongoDB and PostgreSQL as database and implemented on the code level.</li>
-        <li>Used GIT for version control.</li>
-        <li>Made use of React, NodeJS, and JavaScript to implement changes to the frontend as suggested by the UX team.</li>
-        <li>Got well acquainted with JIRA tool which is used for bug tracking, issue tracking, and project management functions.</li>
-        <li>Worked as a Defect Prevention Prime.</li>
-        <li>Worked in agile methodology development process.</li>
-        <li>Got well acquainted with Jenkins.</li>
+        <li><b>Developed RESTful services and a microservice-based web application,</b> leveraging modern
+architectural principles for scalable and efficient software solutions.</li>
+        <li><b>Designed and implemented Java microservices</b> using the Spring Boot platform, ensuring robust and
+maintainable backend services.</li>
+        <li><b>Acquired proficiency in MongoDB (NoSQL) and PostgreSQL (relational)</b> databases, applying them
+effectively at the code level to manage and manipulate data.</li>
+        <li><b>Utilized Git for version control,</b> ensuring code integrity and seamless collaboration across teams.</li>
+        <li><b>Implemented frontend changes using React, Node.js, and JavaScript,</b> working closely with the UX
+team to enhance user experience.</li>
+        <li><b>Leveraged JIRA for bug tracking, issue resolution, and project management,</b> contributing to
+efficient development workflows.</li>
+        <li><b>Gained hands-on experience with Jenkins,</b> supporting continuous integration and deployment
+processes.</li>
+        <li><b>Served as Defect Prevention Prime,</b> proactively identifying and addressing potential issues to improve
+software quality.</li>
+        <li><b>Worked within an Agile development framework,</b> contributing to iterative progress and continuous
+improvement.</li>
       </ul>
     ),
   },
